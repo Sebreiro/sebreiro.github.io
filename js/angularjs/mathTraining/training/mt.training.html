@@ -1,0 +1,52 @@
+﻿<div>
+    <center>
+        <div class="well form-horizontal" style="width: 700px">
+            <div class="col-md-1">
+                <button class="btn btn-primary" ng-click="goBackToSettings()">Back to settings</button>
+            </div>
+            <br />
+            <legend>
+                <center>
+                    <h2>{{trainingName}} Training</h2>
+                </center>
+            </legend>
+            <div class="form-group">
+                <div>
+                    <h4 > Expression:</h4>
+                </div>
+                <br/>
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="input-group">
+                        <span class="input-group-addon">{{exercise.expression}}</span>
+                        <input 
+                            class="form-control" 
+                            type="text" 
+                            set-focus="focusDirectiveOptions" 
+                            ng-model="exercise.userResult"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div ng-show="trainingState.isAnswerChecked">
+                    <div ng-show="!trainingState.isAnswerWrong">
+                        <span class="label label-success">Correct</span>
+                    </div>
+                    <div ng-show="trainingState.isAnswerWrong">
+                        <span class="label label-danger" >Wrong</span>
+                        <div >
+                            <span>{{exercise.expression}}</span>
+                            <span>=</span>
+                            <s>{{exercise.userResult}}</s>
+                            <span>{{exercise.correctResult}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" 
+                        ng-click="nextStep()"
+                        on-enter-key-down="nextStep()">{{!trainingState.isAnswerChecked?'Check':'Next'}}</button>
+            </div>
+        </div>
+    </center>
+</div>

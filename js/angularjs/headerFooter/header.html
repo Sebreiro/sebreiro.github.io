@@ -1,0 +1,20 @@
+﻿<div class="navbar navbar-default navbar-static-top">
+ 
+    <div class="container">
+ 
+        <a ng-click="goToSettings()" href="" class="navbar-brand">Math Training</a> 
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"></button>
+
+        <div ng-if="isShowSignIn" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-show="user.isAuthenticated===true">
+                    <span class="navbar-text " ng-click="showStatistic()"><a href="">Statistic</a></span>
+                    <span class="navbar-text ">{{user.username}}</span>
+                </li>
+                <li ng-show="user.isAuthenticated===false" ng-click="signIn()"><a href="">SignIn</a></li>
+                <li ng-show="user.isAuthenticated===true" ng-click="signOut()"><a href="">SignOut</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+

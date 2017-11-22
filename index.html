@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <title>Math Training</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="/3rd-party/jQuery/jquery.min.js"></script>
+    <script src="/css/bootstrap/bootstrap.min.js"></script>
+    <link href="/css/fontAwesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="/3rd-party/angularjs/ui-select/select.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Environment variables -->
+    <script src="/js/angularjs/environment.js"></script>
+
+                <!-- 3rd party -->
+    <!-- Angularjs -->
+    <script src="/3rd-party/angularjs/angular.js"></script>
+    <script src="/3rd-party/angularjs/ui-route/angular-ui-router.js"></script>
+    <script src="/3rd-party/angularjs/ui-select/select.js"></script>
+    
+    <!-- LoDash -->
+    <script src="/3rd-party/lodash/lodash.min.js"></script>
+    
+    <!-- c3-charts -->
+    <link href="/3rd-party/c3_charts/c3.css" rel="stylesheet" />
+    <script src="/3rd-party/d3/d3.v3.min.js"></script>
+    <script src="/3rd-party/c3_charts/c3.min.js"></script>
+    
+                <!--MY SCRIPTS -->
+    <script src="/js/angularjs/app.js"></script>
+    <script src="/js/angularjs/config.js"></script>
+    
+    <!--Shared Services -->
+
+    <script src="/js/angularjs/shared/services/session.service.js"></script>
+    <script src="/js/angularjs/shared/services/webApi.service.js"></script>
+    <script src="/js/angularjs/shared/services/statistic.service.js"></script>
+    <script src="/js/angularjs/shared/services/operator.service.js"></script>
+    
+    <!--Shared Directives -->
+    <script src="/js/angularjs/shared/directives/setFocus.directive.js"></script>
+    <script src="/js/angularjs/shared/directives/onEnterKeydown.directive.js"></script>
+    
+        <!-- Angularjs modules -->
+    <!-- math training -->
+    <script src="/js/angularjs/mathTraining/mt.route.js"></script>
+    <script src="/js/angularjs/master.controller.js"></script>
+    <script src="/js/angularjs/mathTraining/settings/mt.settings.controller.js"></script>
+    <script src="/js/angularjs/mathTraining/training/mt.training.controller.js"></script>
+    <!-- statistic -->
+    <script src="/js/angularjs/statistic/directives/lineChart.directive.js"></script>
+    <script src="/js/angularjs/statistic/statistic.controller.js"></script>
+    <!-- login -->
+    <script src="/js/angularjs/userManagement/login.controller.js"></script>
+    
+    <ui-view></ui-view>
+</body>
+</html>

@@ -1,0 +1,1 @@
+#### Frontend and git submodule for [Sebreiro/MathTraining_AspNetCore](https://github.com/Sebreiro/MathTraining_AspNetCore) repository ####
